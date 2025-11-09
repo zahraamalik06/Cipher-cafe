@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cipher Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+10&family=Jost:ital,wght@0,100..900;1,100..900&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="CipherCafe">Cipher Café</h1>
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <p id="Cipher2" style="font-size: 14rem;;">Cipher Café</p>
+    <button id="start-btn">Start Game</button>
+    <div id="difficulty-select" style="display:none;">
+      <p>Choose Mode:</p>
+      <button id="casual-btn">Casual (5 orders/day)</button>
+      <button id="timed-btn">Timed (2 minutes/day)</button>
+    </div>
+  </div>
+
+  <!-- Game Area -->
+  <div id="game" style="display:none;">
+
+  <div id="status-bar">
+    <div id="coin-display">🪙 Coins: 0</div>
+    <div id="hint-area">
+     <button id="hint-btn" title="Buy a hint (2 coins)">💡 Get Hint (-2)</button>
+     <span id="hint-text"></span>
+   </div>
+    </div>
+
+    <div id="day-display">Day 1</div>
+    <div id="timer"></div>
+    <div id="order">Order: —</div>
+    <div id="menu"></div>
+    <button id="serve-btn">Serve</button>
+    <div id="feedback"></div>
+    <div id="score">Score: 0</div>
+    <div id="stars-left">Orders left today: 5</div>
+    <div id="orders-count">Orders served: 0</div>
+  </div>
+
+  <!-- gif -->
+    <div id="order-served-gif" style="display:none;">
+      <div id="order-feedback" style="display:none; font-size: 2rem; color: #7D5732; text-align:center; margin-top:10px;"></div>
+      <div id="order-feedback-2" style="display:none; font-size: 2rem; color: #7D5732; text-align:center; margin-top:10px;">❌ Oops! The customer wanted something else! 😬</div>
+      <img src="assets/coffee-milk.gif" alt="coffee&milk" id="coffee-milk-gif" style="display:none;">
+      <img src="assets/coffee-2-sugar.gif" alt="coffeeDoubleSugar" id="coffee-double-sugar-gif" style="display:none;">
+      <img src="assets/tea-2-syrup.gif" alt="tea" id="tea-double-syrup-gif" style="display:none;">
+      <img src="assets/coffee-sugar.gif" alt="coffee-sugar" id="coffee-sugar-gif" style="display:none;">
+      <img src="assets/coffee-2-syrup.gif" alt="coffee-double-syrup" id="coffee-double-syrup-gif" style="display:none;">
+      <img src="assets/tea-milk.gif" alt="tea-milk" id="tea-milk-gif" style="display:none;">
+      <img src="assets/coffee-2-milk.gif" alt="coffee-double-milk" id="coffee-2-milk-gif" style="display:none;">
+      <img src="assets/tea-sugar.gif" alt="tea-sugar" id="tea-sugar-gif" style="display: none;">
+      <img src="assets/icedcoffee-milk.gif" alt="icedcoffee-milk" id="icedcoffee-milk-gif" style="display: none;">
+      <img src="assets/icedcoffee-2-syrup.gif" alt="icedcoffee-2-syrup" id="icedcoffee-2-syrup-gif" style="display: none;">
+      <img src="assets/matcha-milk.gif" alt="matcha-milk" id="matcha-milk-gif" style="display: none;">
+      <img src="assets/matcha-syrup.gif" alt="matcha-syrup" id="matcha-syrup-gif" style="display: none;">
+      <img src="assets/chocolate-syrup.gif" alt="chocolate-syrup" id="chocolate-syrup-gif" style="display: none;">
+      <img src="assets/matcha-2-sugar.gif" alt="matcha-2-sugar" id="matcha-2-sugar-gif" style="display: none;">
+      <img src="assets/coffee-syrup.gif" alt="coffee-syrup" id="coffee-syrup-gif" style="display: none;">
+      <img src="assets/chocolate-milk.gif" alt="chocolate-milk" id="chocolate-milk-gif" style="display: none;">
+      <img src="assets/tea-2-sugar.gif" alt="tea-2-sugar" id="tea-2-sugar-gif" style="display: none;">
+      <img src="assets/icedcoffee-2-milk.gif" alt="icedcoffee-2-milk" id="icedcoffee-2-milk-gif" style="display: none;">
+      <img src="assets/matcha-2-syrup.gif" alt="matcha-2-syrup" id="matcha-2-syrup-gif" style="display: none;">
+      <img src="assets/chocolate-2-syrup.gif" alt="chocolate-2-syrup" id="chocolate-2-syrup-gif" style="display: none;">
+      <button id="continue-btn" style="display:none;">Continue</button>
+    </div>
+
+  <!-- Summary -->
+ 
+  <div id="summary" style="display:none;">
+    <h2>Day Summary</h2>
+    <div id="summary-content"></div>
+    <button id="next-day-btn" style="display:none;">Next Day</button>
+    <button id="restart-btn" style="display:none;">Restart Game</button>
+  </div>
+  <img id="Happy" src="assets/happyCoffee2.svg" alt="happyCoffee">
+  <img id="Sad" src="assets/sadCoffee2.svg" alt="sadCoffee">
+
+  <script src="game.js"></script>
+</body>
+</html>

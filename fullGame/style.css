@@ -1,0 +1,228 @@
+body{
+  font-family: "Jersey 10", serif;
+  font-weight: 400;
+  font-style: normal;  
+  background:#f7efe6; 
+  background-image: url(assets/background.svg);
+  background-size: cover;
+  color:#7D5732; 
+  padding:20px;
+}
+
+* {
+    font-family: "Jersey 10", serif;
+  font-weight: 400;
+}
+
+h1 { 
+  margin:0 0 10px; 
+  font-size:60px; 
+  text-align: center;
+  background-color: #7D5732;
+  color: #FFF8F2;
+  width: 62%;
+  margin: 0 auto 20px auto;
+  border-radius: 18px;
+  display: none;
+}
+
+#start-screen button{
+  font-size: 6rem;
+}
+
+#start-screen #difficulty-select button{
+  font-size: 20px;
+}
+
+#difficulty-select p{
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+#timer {
+  font-size: 50px;
+  border: #7D5732 solid 4px;
+  border-radius: 12px;
+  width: 180px;
+  margin: 0 auto 20px auto;
+}
+
+#day-display {
+  font-size: 40px;
+  padding: 0;
+}
+
+#game, #summary, #start-screen { 
+  background-color: #FFF8F2;
+  border: #7D5732 solid 12px;
+  border-radius: 25px;
+  width:840px; 
+  margin:0 auto; 
+  padding:18px; 
+  border-radius:8px; 
+  text-align:center; 
+  clip-path: polygon(
+0px calc(100% - 20px),
+4px calc(100% - 20px),
+4px calc(100% - 12px),
+8px calc(100% - 12px),
+8px calc(100% - 8px),
+12px calc(100% - 8px),
+12px calc(100% - 4px),
+20px calc(100% - 4px),
+20px 100%,
+calc(100% - 20px) 100%,
+calc(100% - 20px) calc(100% - 4px),
+calc(100% - 12px) calc(100% - 4px),
+calc(100% - 12px) calc(100% - 8px),
+calc(100% - 8px) calc(100% - 8px),
+calc(100% - 8px) calc(100% - 12px),
+calc(100% - 4px) calc(100% - 12px),
+calc(100% - 4px) calc(100% - 20px),
+100% calc(100% - 20px),
+100% 20px,
+calc(100% - 4px) 20px,
+calc(100% - 4px) 12px,
+calc(100% - 8px) 12px,
+calc(100% - 8px) 8px,
+calc(100% - 12px) 8px,
+calc(100% - 12px) 4px,
+calc(100% - 20px) 4px,
+calc(100% - 20px) 0px,
+20px 0px,
+20px 4px,
+12px 4px,
+12px 8px,
+8px 8px,
+8px 12px,
+4px 12px,
+4px 20px,
+0px 20px
+);
+}
+
+#start-screen {
+  width: 80%;
+  height: 80vh;
+  align-content: center;
+}
+
+#order { 
+  font-weight:700; 
+  margin:14px 0; 
+  font-size: 30px;
+}
+
+#menu { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; justify-content:center; }
+
+.option { 
+  font-size: 20px;
+  padding:10px 12px; 
+  border-radius:6px; 
+  border:2px solid #7D5732; 
+  color: #7D5732;
+  background:#FFF8F2; 
+  cursor:pointer; 
+}
+
+.option.selected { outline:3px solid #845233; background:#fff7d6; }
+
+#serve-btn, #start-btn, #casual-btn, #timed-btn, #next-day-btn, #restart-btn {
+  font-size: 22px;
+  padding:12px 14px; 
+  border:none; 
+  border-radius:6px; 
+  margin-top:12px; 
+  cursor:pointer;
+}
+
+#serve-btn { background:#7D5732; color: #FFF8F2;}
+
+#start-btn, #casual-btn, #timed-btn { 
+  background:#7D5732; 
+  color:#FFF8F2; }
+
+#next-day-btn {   
+  background:#7D5732; 
+  color:#FFF8F2; }
+
+#restart-btn { 
+  background:#7D5732; 
+  color:#FFF8F2; }
+
+#feedback {font-size: 18px; margin-top:12px; min-height:24px; }
+
+#score, #stars-left { font-size: 25px; margin-top:8px; font-weight:600; }
+
+.stars { color:#f4b400; font-size:20px; }
+
+table { width:100%; border-collapse:collapse; margin-top:10px; font-size:16px; }
+th, td { border:1px solid #ddd; padding:6px; text-align:center; }
+th { background:#f0f0f0; }
+
+#summary-content p { 
+  font-size: 20px;
+}
+
+#Happy {
+  width: 250px;
+  padding-left: 80%;
+  margin-top: -30%;
+  display: none;
+}
+#Sad {
+  width: 250px;
+  padding-left: 80%;
+  margin-top: -30%;
+  display: none;
+}
+
+#orders-count {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+#coin-display  {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+ #hint-area #hint-btn , #hint-area #hint-text {
+  font-size: 18px;
+  margin-top: 10px;
+ }
+
+ #hint-btn {
+  border-radius: 18px;
+  background-color: #FFF8F2;
+  color: #7D5732;
+  border:  solid #7D5732 1px;
+  padding: 2px;
+  padding-right: 5px;
+  cursor: pointer;
+ }
+
+ #coin-display, #hint-area {
+  display: inline-block;
+  padding: 10px;
+  
+ }
+
+ #hint-text {
+  background-color: #7D5732;
+  color: #FFF8F2;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-left: 10px;
+ }
+
+ 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cipher Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+10&family=Jost:ital,wght@0,100..900;1,100..900&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="CipherCafe">Cipher Café</h1>
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <p id="Cipher2" style="font-size: 14rem;;">Cipher Café</p>
+    <button id="start-btn">Start Game</button>
+    <div id="difficulty-select" style="display:none;">
+      <p>Choose Mode:</p>
+      <button id="casual-btn">Casual (5 orders/day)</button>
+      <button id="timed-btn">Timed (2 minutes/day)</button>
+    </div>
+  </div>
+
+  <!-- Game Area -->
+  <div id="game" style="display:none;">
+    <div id="coin-display">🪙 Coins: 0</div>
+    <div id="hint-area">
+     <button id="hint-btn" title="Buy a hint (2 coins)">💡 Get Hint (-2)</button>
+     <span id="hint-text"></span>
+   </div>
+
+    <div id="day-display">Day 1</div>
+    <div id="timer"></div>
+    <div id="order">Order: —</div>
+    <div id="menu"></div>
+    <button id="serve-btn">Serve</button>
+    <div id="feedback"></div>
+    <div id="score">Score: 0</div>
+    <div id="stars-left">Orders left today: 5</div>
+    <div id="orders-count">Orders served: 0</div>
+  </div>
+
+  <!-- Summary -->
+ 
+  <div id="summary" style="display:none;">
+    <h2>Day Summary</h2>
+    <div id="summary-content"></div>
+    <button id="next-day-btn" style="display:none;">Next Day</button>
+    <button id="restart-btn" style="display:none;">Restart Game</button>
+  </div>
+  <img id="Happy" src="assets/happyCoffee.svg" alt="happyCoffee">
+  <img id="Sad" src="assets/sadCoffee.svg" alt="sadCoffee">
+
+  <script src="game.js"></script>
+</body>
+</html>
